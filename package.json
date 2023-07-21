@@ -1,0 +1,54 @@
+{
+  "name": "vite-plugin-kjxing-log",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "日志打印输出工具",
+  "homepage": "https://github.com/KongJiaXing/vite-plugin-kjxing-log#readme",
+  "bugs": {
+    "url": "https://github.com/KongJiaXing/vite-plugin-kjxing-log/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KongJiaXing/vite-plugin-kjxing-log.git"
+  },
+  "peerDependencies": {
+    "vite": ">4.0.0-0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "pnpm run build --watch --ignore-watch examples",
+    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "example": "cd examples && pnpm run dev",
+    "prepublishOnly": "pnpm run build",
+    "release": "npx bumpp --push --tag --commit && pnpm publish"
+  },
+  "keywords": [
+    "kjxing",
+    "log"
+  ],
+  "author": "KongJiaXing",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0",
+    "rollup": "^3.26.3",
+    "tsup": "^7.1.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.4"
+  }
+}
