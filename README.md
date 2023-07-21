@@ -2,6 +2,10 @@
     为了方便管理项目日志，能快速控制日志模块的输出，部署时也能快速清空所有日志
 
 ## 使用说明
+### 安装
+```
+npm install vite-plugin-kjxing-log -D
+```
 ### 基本使用
 ```typescript
 import VitePluginKjxingLog from "vite-plugin-kjxing-log";
