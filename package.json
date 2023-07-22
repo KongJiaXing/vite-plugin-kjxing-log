@@ -3,6 +3,7 @@
   "type": "module",
   "version": "0.0.4",
   "description": "日志打印输出工具",
+  "sideEffects": false,
   "homepage": "https://github.com/KongJiaXing/vite-plugin-kjxing-log#readme",
   "bugs": {
     "url": "https://github.com/KongJiaXing/vite-plugin-kjxing-log/issues"
@@ -12,7 +13,7 @@
     "url": "https://github.com/KongJiaXing/vite-plugin-kjxing-log.git"
   },
   "peerDependencies": {
-    "vite": ">4.0.0-0"
+    "vite": "^4.0.0 || ^3.0.0"
   },
   "exports": {
     ".": {
@@ -24,6 +25,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "unbuild --stub",
     "build": "unbuild",
