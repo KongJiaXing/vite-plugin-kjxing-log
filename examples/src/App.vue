@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-import {KLog} from "../../src";
+import {KLog} from "vite-plugin-kjxing-log";
 
 KLog.version("测试vite插件", "0.0.1");
 

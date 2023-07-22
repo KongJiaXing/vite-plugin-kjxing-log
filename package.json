@@ -25,11 +25,11 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "pnpm run build --watch --ignore-watch examples",
-    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "dev": "unbuild --stub",
+    "build": "unbuild",
     "example": "cd examples && pnpm run dev",
     "prepublishOnly": "pnpm run build",
-    "release": "npx bumpp --push --tag --commit && pnpm publish"
+    "release": "npx bumpp --push --tag --commit"
   },
   "keywords": [
     "kjxing",
@@ -47,8 +47,8 @@
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.0",
     "rollup": "^3.26.3",
-    "tsup": "^7.1.0",
     "typescript": "^5.1.6",
+    "unbuild": "^1.2.1",
     "vite": "^4.4.4"
   }
 }

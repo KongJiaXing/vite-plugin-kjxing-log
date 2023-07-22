@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import VitePluginKjxingLog from "../src";
+import VitePluginKjxingLog from "vite-plugin-kjxing-log";
 
 // https://vitejs.dev/config/
 export default defineConfig({
