@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-kjxing-log",
   "type": "module",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "日志打印输出工具",
   "homepage": "https://github.com/KongJiaXing/vite-plugin-kjxing-log#readme",
   "bugs": {
